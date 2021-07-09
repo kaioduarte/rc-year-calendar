@@ -6,8 +6,7 @@
   "scripts": {
     "watch": "rollup -c --watch",
     "clean": "rimraf dist && rimraf locales",
-    "build": "npm run clean && rollup -c && npm run build:locales",
-    "build:locales": "cpy node_modules/js-year-calendar/locales/* locales && renamer --find js-year-calendar --replace rc-year-calendar locales/*",
+    "build": "npm run clean && rollup -c",
     "prepare": "npm run build",
     "test": "echo 'No tests implemented'"
   },
