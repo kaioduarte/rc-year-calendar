@@ -157,7 +157,7 @@ export default class Calendar extends React.Component {
         if (this.compare(nextProps.onDayEnter, this.props.onDayEnter)) this.updateEvent('mouseOnDay', this.props.onDayEnter, nextProps.onDayEnter);
         if (this.compare(nextProps.onDayLeave, this.props.onDayLeave)) this.updateEvent('mouseOutDay', this.props.onDayLeave, nextProps.onDayLeave);
         if (this.compare(nextProps.onRenderEnd, this.props.onRenderEnd)) this.updateEvent('renderEnd', this.props.onRenderEnd, nextProps.onRenderEnd);
-        if (this.compare(nextProps.onRangeSelected, this.props.onRangeSelected)) this.updateEvent('selectRange', this.props.onRangeSelected, nextProps.onRangeSelected);
+        this.updateEvent('selectRange', this.props.onRangeSelected, nextProps.onRangeSelected);
         if (this.compare(nextProps.onYearChanged, this.props.onYearChanged)) this.updateEvent('yearChanged', this.props.onYearChanged, nextProps.onYearChanged);
 
         if (ops.length > 0) {
